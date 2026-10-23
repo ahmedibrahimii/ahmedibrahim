@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR — Luxury Perfumes</title>
+  <meta name="description" content="NOIR Parfums de Luxe — Discover bespoke, deep ocean-inspired luxury perfumes crafted for those who leave a lasting signature.">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌑</text></svg>">
+</head>
+<body data-lang="en">
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" data-i18n="announcement">
+    COMPLIMENTARY LUXURY SHIPPING ON ORDERS OVER 2,000 EGP • HANDCRAFTED IN LIMITED BATCHES
+  </div>
+
+  <!-- Header -->
+  <header class="main-header" id="main-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        NOIR
+        <span class="subtext" data-i18n="brandTagline">PARFUMS DE LUXE</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active" data-i18n="navHome">Home</a></li>
+          <li><a href="#shop" data-i18n="navShop">Shop</a></li>
+          <li><a href="#story" data-i18n="navStory">Our Story</a></li>
+          <li><a href="#craftsmanship" data-i18n="navCraft">Craftsmanship</a></li>
+          <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="lang-btn" aria-label="Toggle Language">عربي</button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+
+        <button class="cart-toggle" aria-label="Shopping Bag">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">0</span>
+        </button>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <canvas id="underwater-canvas"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-text-col">
+        <div class="hero-tag" data-i18n="brandTagline">PARFUMS DE LUXE</div>
+        <h1 class="hero-title" data-i18n="heroHeadline">SCENT IS YOUR SIGNATURE.</h1>
+        <p class="hero-description" data-i18n="heroSubtext">
+          Discover a world of exceptional fragrances crafted for those who leave a lasting impression.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn-primary hero-btn-primary" data-i18n="heroBtnExplore">EXPLORE COLLECTION</button>
+          <button class="btn-secondary hero-btn-secondary" data-i18n="heroBtnDiscover">DISCOVER NOIR</button>
+        </div>
+      </div>
+
+      <div class="hero-bottle-col">
+        <div class="hero-bottle-wrapper">
+          <img src="" alt="NOIR Oud Perfume" class="hero-bottle-img" id="hero-bottle-svg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights-section">
+    <div class="highlights-grid">
+      <div class="highlight-item">
+        <div class="highlight-icon">✦</div>
+        <div>
+          <h4 class="highlight-title" data-i18n="featHandcrafted">Master Craftsmanship</h4>
+          <p class="highlight-desc" data-i18n="featHandcraftedDesc">Blended by world-renowned perfumers using rare natural essences.</p>
+        </div>
+      </div>
+
+      <div class="highlight-item">
+        <div class="highlight-icon">◈</div>
+        <div>
+          <h4 class="highlight-title" data-i18n="featLonglasting">Extrait Concentration</h4>
+          <p class="highlight-desc" data-i18n="featLonglastingDesc">High oil concentration ensuring 24-hour opulent projection.</p>
+        </div>
+      </div>
+
+      <div class="highlight-item">
+        <div class="highlight-icon">⟡</div>
+        <div>
+          <h4 class="highlight-title" data-i18n="featFreeShipping">Bespoke Packaging</h4>
+          <p class="highlight-desc" data-i18n="featFreeShippingDesc">Encased in handcrafted velvet-lined midnight glass bottles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story -->
+  <section class="story-section" id="story">
+    <div class="section-container">
+      <div class="story-grid">
+        <div class="story-text-col reveal-on-scroll">
+          <div class="story-header-subtitle" data-i18n="storySubtitle">THE ESSENCE OF NOIR</div>
+          <h2 class="story-header-title" data-i18n="storyTitle">BORN FROM THE OCEAN DEPTHS & NIGHTTIME ELEGANCE</h2>
+          <p class="story-text" data-i18n="storyP1">
+            NOIR was founded on a singular philosophy: true luxury is quiet, mysterious, and unforgettable. Our master perfumers venture into the abyss of sensory art, extracting rare botanical essences, aged resins, and deep oceanic accords.
+          </p>
+          <p class="story-text" data-i18n="storyP2">
+            Each fragrance undergoes a meticulous 6-month maceration process in dark subterranean vaults, capturing the velvety atmospheric depth of midnight waves.
+          </p>
+
+          <div class="story-stats">
+            <div>
+              <div class="stat-value" data-i18n="storyStat1Value">35%</div>
+              <div class="stat-label" data-i18n="storyStat1Label">Extrait Concentration</div>
+            </div>
+            <div>
+              <div class="stat-value" data-i18n="storyStat2Value">24h+</div>
+              <div class="stat-label" data-i18n="storyStat2Label">Hours Persistence</div>
+            </div>
+            <div>
+              <div class="stat-value" data-i18n="storyStat3Value">100%</div>
+              <div class="stat-label" data-i18n="storyStat3Label">Natural Ingredients</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-img-col reveal-on-scroll">
+          <div class="story-img-frame">
+            <svg width="100%" height="100%" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+              <rect width="100%" height="100%" fill="#081426"/>
+              <circle cx="300" cy="300" r="220" fill="none" stroke="#67DDF5" stroke-width="1" opacity="0.3"/>
+              <circle cx="300" cy="300" r="160" fill="none" stroke="#DDE7F0" stroke-width="1" opacity="0.2"/>
+              <text x="300" y="280" font-family="'Cinzel', serif" font-size="42" font-weight="700" fill="#67DDF5" text-anchor="middle" letter-spacing="8">NOIR</text>
+              <text x="300" y="330" font-family="'Cinzel', serif" font-size="18" fill="#DDE7F0" text-anchor="middle" letter-spacing="6">ATELIER DU PARFUM</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Collection -->
+  <section class="shop-section" id="shop">
+    <div class="section-container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-subtitle" data-i18n="shopSubtitle">CURATED LUXURY FRAGRANCES</div>
+        <h2 class="section-title" data-i18n="shopTitle">THE PERFUME COLLECTION</h2>
+      </div>
+
+      <!-- Filters & Search -->
+      <div class="filter-bar reveal-on-scroll">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All Fragrances</button>
+          <button class="filter-btn" data-filter="men" data-i18n="filterMen">For Him</button>
+          <button class="filter-btn" data-filter="women" data-i18n="filterWomen">For Her</button>
+          <button class="filter-btn" data-filter="unisex" data-i18n="filterUnisex">Unisex</button>
+          <button class="filter-btn" data-filter="woody" data-i18n="filterWoody">Woody</button>
+          <button class="filter-btn" data-filter="fresh" data-i18n="filterFresh">Fresh</button>
+          <button class="filter-btn" data-filter="oriental" data-i18n="filterOriental">Oriental</button>
+          <button class="filter-btn" data-filter="floral" data-i18n="filterFloral">Floral</button>
+        </div>
+
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search luxury fragrances..." data-i18n-placeholder="searchPlaceholder" />
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Spotlight Section -->
+  <section class="spotlight-section">
+    <div class="section-container">
+      <div class="spotlight-card reveal-on-scroll">
+        <div class="spotlight-img">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+            <rect x="80" y="100" width="240" height="350" rx="16" fill="#0B2942" stroke="#67DDF5" stroke-width="2" />
+            <rect x="120" y="200" width="160" height="150" rx="8" fill="#05070C" stroke="#DDE7F0" stroke-width="1" />
+            <text x="200" y="250" font-family="'Cinzel', serif" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="5">NOIR</text>
+            <text x="200" y="290" font-family="'Cinzel', sans-serif" font-size="14" fill="#67DDF5" text-anchor="middle" letter-spacing="3">OUD EXTRAIT</text>
+          </svg>
+        </div>
+
+        <div class="spotlight-content">
+          <div class="story-header-subtitle" data-i18n="spotlightTag">LIMITED EDITION SPOTLIGHT</div>
+          <h2 class="story-header-title" data-i18n="spotlightTitle">NOIR OUD — EXTRAIT DE PARFUM</h2>
+          <p class="story-text" data-i18n="spotlightDesc">
+            Our signature masterpiece. Smoked Cambodian oud intertwined with Taif rose petals and deep leather notes.
+          </p>
+
+          <div class="product-price">
+            <span class="price-original" data-i18n="spotlightOrigPrice">2,800 EGP</span>
+            <span class="price-current" data-i18n="spotlightPrice">2,400 EGP</span>
+          </div>
+
+          <div>
+            <button class="btn-primary" onclick="addToCart('noir-oud')" data-i18n="btnAddToCart">ADD TO BAG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craftsmanship / Pyramid -->
+  <section class="craft-section" id="craftsmanship">
+    <div class="section-container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-subtitle" data-i18n="craftSubtitle">THE ART OF PERFUMERY</div>
+        <h2 class="section-title" data-i18n="craftTitle">DISCOVER THE FRAGRANCE PYRAMID</h2>
+      </div>
+
+      <div class="craft-grid">
+        <div class="craft-card reveal-on-scroll">
+          <div class="craft-step">01</div>
+          <h3 class="craft-card-title" data-i18n="craftTopNotes">TOP NOTES</h3>
+          <p class="craft-card-desc" data-i18n="craftTopDesc">The initial ethereal impression that captures your senses in the first 15 minutes.</p>
+        </div>
+
+        <div class="craft-card reveal-on-scroll">
+          <div class="craft-step">02</div>
+          <h3 class="craft-card-title" data-i18n="craftHeartNotes">HEART NOTES</h3>
+          <p class="craft-card-desc" data-i18n="craftHeartDesc">The soul of the fragrance that unfolds gracefully over 4 to 6 hours.</p>
+        </div>
+
+        <div class="craft-card reveal-on-scroll">
+          <div class="craft-step">03</div>
+          <h3 class="craft-card-title" data-i18n="craftBaseNotes">BASE NOTES</h3>
+          <p class="craft-card-desc" data-i18n="craftBaseDesc">The enduring signature that clings softly to skin and cashmere long after midnight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews-section">
+    <div class="section-container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-subtitle" data-i18n="reviewsSubtitle">VOICES OF ELEGANCE</div>
+        <h2 class="section-title" data-i18n="reviewsTitle">CLIENT EXPERIENCES</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal-on-scroll">
+          <p class="review-text" data-i18n="review1Text">"NOIR OUD is unlike anything I have ever worn. The sillage is mesmerizing, and I receive compliments everywhere I go in Cairo."</p>
+          <div>
+            <div class="review-author" data-i18n="review1Author">Kareem El-Sayed</div>
+            <div class="review-loc" data-i18n="review1Loc">Cairo, Egypt</div>
+          </div>
+        </div>
+
+        <div class="review-card reveal-on-scroll">
+          <p class="review-text" data-i18n="review2Text">"Ocean Veil feels like diving into deep nocturnal waters. Crisp, luxurious, and unbelievably long-lasting."</p>
+          <div>
+            <div class="review-author" data-i18n="review2Author">Nour Al-Mansoor</div>
+            <div class="review-loc" data-i18n="review2Loc">Alexandria, Egypt</div>
+          </div>
+        </div>
+
+        <div class="review-card reveal-on-scroll">
+          <p class="review-text" data-i18n="review3Text">"The packaging alone feels like a piece of high art. Royal Musk is my absolute signature everyday scent now."</p>
+          <div>
+            <div class="review-author" data-i18n="review3Author">Laila Hassan</div>
+            <div class="review-loc" data-i18n="review3Loc">Giza, Egypt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="newsletter-box reveal-on-scroll">
+      <div class="section-subtitle" data-i18n="brandTagline">PARFUMS DE LUXE</div>
+      <h2 class="section-title" data-i18n="newsTitle">JOIN THE NOIR CIRCLE</h2>
+      <p class="story-text" data-i18n="newsDesc">Receive exclusive invitations to limited batch releases and bespoke perfume masterclasses.</p>
+
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter your email address" data-i18n-placeholder="newsPlaceholder" required />
+        <button type="submit" class="btn-primary" data-i18n="newsBtn">SUBSCRIBE</button>
+      </form>
+      <div class="newsletter-success" id="newsletter-success" data-i18n="newsSuccess">Welcome to NOIR Private Circle.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer" id="contact">
+    <div class="footer-container">
+      <div>
+        <div class="brand-logo" style="margin-bottom: 1rem;">
+          NOIR
+          <span class="subtext" data-i18n="brandTagline">PARFUMS DE LUXE</span>
+        </div>
+        <p class="story-text" style="font-size: 0.85rem;" data-i18n="footerDesc">
+          NOIR is a luxury fragrance house crafting atmospheric, haute-perfumery creations that redefine modern elegance.
+        </p>
+        <p class="story-text" style="font-size: 0.85rem; color: var(--accent-cyan); margin-top: 1rem;" data-i18n="footerWhatsappContact">
+          WhatsApp Concierge: +20 114 573 1029
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title" data-i18n="footerQuickLinks">QUICK LINKS</h4>
+        <ul class="footer-links">
+          <li><a href="#hero" data-i18n="navHome">Home</a></li>
+          <li><a href="#shop" data-i18n="navShop">Shop</a></li>
+          <li><a href="#story" data-i18n="navStory">Our Story</a></li>
+          <li><a href="#craftsmanship" data-i18n="navCraft">Craftsmanship</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title" data-i18n="footerCustomerCare">CUSTOMER CARE</h4>
+        <ul class="footer-links">
+          <li><a href="#contact" data-i18n="navContact">Contact Concierge</a></li>
+          <li><a href="#" onclick="openCheckout()">WhatsApp Checkout</a></li>
+          <li><a href="#" data-i18n="footerShippingNotice">Express Shipping Egypt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title" data-i18n="footerPaymentMethods">ACCEPTED PAYMENTS</h4>
+        <p class="story-text" style="font-size: 0.825rem; margin-bottom: 0.75rem;">• Cash on Delivery (COD)</p>
+        <p class="story-text" style="font-size: 0.825rem; color: var(--accent-cyan);">• InstaPay Direct Transfer</p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title" data-i18n="footerContactDev" style="font-size: 0.75rem; letter-spacing: 0.15em; margin-bottom: 1rem;">Website Developer</h4>
+        <p class="story-text" style="font-size: 0.825rem;"><strong style="color: var(--accent-cyan);">Ahmed Ibrahim</strong></p>
+        <p class="story-text" style="font-size: 0.825rem;">
+          <a href="https://wa.me/201145731029" target="_blank" rel="noopener" style="color: var(--accent-cyan); text-decoration: none;">WhatsApp: 01145731029</a>
+        </p>
+        <p class="story-text" style="font-size: 0.825rem;">
+          <a href="mailto:ahibrahimii98@gmail.com" style="color: var(--accent-cyan); text-decoration: none;">ahibrahimii98@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div data-i18n="footerCopyright">© 2026 NOIR PARFUMS DE LUXE. ALL RIGHTS RESERVED.</div>
+      <div>CAIRO • ALEXANDRIA</div>
+    </div>
+
+    <div class="footer-attribution" style="max-width: 1250px; margin: 1.5rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(221,231,240,0.08); display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; font-size: 0.775rem; color: var(--text-muted);">
+      <span>Developed by <a href="https://wa.me/201145731029" target="_blank" rel="noopener" style="color: var(--accent-cyan); text-decoration: underline;">Ahmed Ibrahim</a></span>
+      <span>|</span>
+      <span>WhatsApp: <a href="https://wa.me/201145731029" target="_blank" rel="noopener" style="color: var(--accent-cyan); text-decoration: none;">01145731029</a></span>
+      <span>|</span>
+      <span>Email: <a href="mailto:ahibrahimii98@gmail.com" style="color: var(--accent-cyan); text-decoration: none;">ahibrahimii98@gmail.com</a></span>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <div class="drawer-title" data-i18n="cartTitle">YOUR SHOPPING BAG</div>
+      <button class="drawer-close" onclick="closeCart()">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <!-- Dynamic cart items -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-row">
+        <span data-i18n="cartSubtotal">Subtotal</span>
+        <span id="cart-subtotal">0 EGP</span>
+      </div>
+      <div class="cart-row">
+        <span data-i18n="cartShipping">Shipping</span>
+        <span id="cart-shipping" data-i18n="cartFreeShippingText">Free Shipping in Egypt</span>
+      </div>
+      <div class="cart-row total">
+        <span data-i18n="cartTotal">Total</span>
+        <span id="cart-total-price">0 EGP</span>
+      </div>
+
+      <button class="btn-primary" onclick="openCheckout()" data-i18n="cartCheckoutBtn">PROCEED TO CHECKOUT</button>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="cart-overlay"></div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-container" id="quick-view-modal">
+    <button class="drawer-close" onclick="closeQuickView()" style="position: absolute; top: 1rem; right: 1rem;">&times;</button>
+    <div class="quick-view-grid">
+      <div class="quick-view-img">
+        <img id="qv-image" src="" alt="Perfume" />
+      </div>
+
+      <div>
+        <h2 class="title-serif" id="qv-name" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></h2>
+        <div class="price-current" id="qv-price" style="margin-bottom: 1rem;"></div>
+        <p class="story-text" id="qv-desc" style="font-size: 0.85rem; margin-bottom: 1rem;"></p>
+
+        <div class="quick-notes">
+          <strong data-i18n="quickNotesTitle">FRAGRANCE PYRAMID</strong><br/>
+          <span data-i18n="quickTop">Top:</span> <span id="qv-top"></span><br/>
+          <span data-i18n="quickHeart">Heart:</span> <span id="qv-heart"></span><br/>
+          <span data-i18n="quickBase">Base:</span> <span id="qv-base"></span>
+        </div>
+
+        <div style="margin: 1rem 0;">
+          <label style="font-size: 0.8rem;" data-i18n="quickSelectSize">Select Size:</label>
+          <div class="size-opts" id="qv-size-options"></div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+          <input type="number" id="qv-qty" value="1" min="1" max="10" style="width: 60px; padding: 0.5rem; background: var(--bg-dark); border: 1px solid var(--glass-border); color: var(--text-white); border-radius: 4px;" />
+          <button class="btn-primary" style="flex-grow: 1;" onclick="addFromQuickView()" data-i18n="btnAddToCart">ADD TO BAG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="quick-view-overlay"></div>
+
+  <!-- WhatsApp Checkout Modal -->
+  <div class="modal-container" id="checkout-modal">
+    <button class="drawer-close" onclick="closeCheckout()" style="position: absolute; top: 1rem; right: 1rem;">&times;</button>
+    <div id="checkout-container">
+      <!-- Rendered dynamically by app.js -->
+    </div>
+  </div>
+  <div class="modal-overlay" id="checkout-overlay"></div>
+
+  <!-- Scripts -->
+  <script src="./js/data.js"></script>
+  <script src="./js/canvas-hero.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
